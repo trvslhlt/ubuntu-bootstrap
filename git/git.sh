@@ -4,7 +4,7 @@
 
 sudo apt-get install -y git bash-completion
 
-if grep -q bash ~/.profile; then
+if grep -q bash-completion ~/.profile; then
 	echo "FOUND"
 else
 	cat ./git/bash_completion_addition >> ~/.profile
