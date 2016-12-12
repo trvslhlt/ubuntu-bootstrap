@@ -7,7 +7,7 @@ sudo apt-get install -y git bash-completion
 if grep -q bash-completion ~/.profile; then
 	echo "FOUND bash-completion"
 else
-	cat ./git/bash_completion_addition >> ~/.profile
+	cat ./git/bash_completion >> ~/.profile
 	echo "ADDED bash-completion"
 fi	
 
