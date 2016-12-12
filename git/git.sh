@@ -19,3 +19,7 @@ else
 	echo "ADDED parse_git_branch"
 fi
 
+
+git config --global user.email "trvslhlt@gmail.com"
+git config --global user.name "travis holt"
+
