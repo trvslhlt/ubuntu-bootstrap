@@ -5,8 +5,8 @@ if [ -f ./provision.sh ]
 then
 	echo Begining provisioning...	
 else
-	echo "Please run provisioning.sh from that file's directory"
-	exit 1
+	echo "Please run provisioning.sh from the file's directory"
+	return 1
 fi
 
 
