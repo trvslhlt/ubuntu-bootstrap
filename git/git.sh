@@ -1,10 +1,10 @@
 #!/bin/bash
 
-
+. ./utils/functions.sh
 
 sudo apt-get install -y git bash-completion
 
-if grep -q bash-completion ~/.profile; then
+if file_contains_string ~/.profile bash-completion; then
 	echo "FOUND bash-completion"
 else
 	cat ./git/bash_completion >> ~/.profile
@@ -12,9 +12,10 @@ else
 fi	
 
 
-if grep -q parse_git_branch ~/.profile; then
+if file_contains_string ~/.profile parse_git_branch; then
 	echo "FOUND parse_git_branch"
 else
 	cat ./git/parse_git_branch >> ~/.profile
 	echo "ADDED parse_git_branch"
 fi
+
