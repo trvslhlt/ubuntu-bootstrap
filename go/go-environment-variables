@@ -1,0 +1,5 @@
+
+# go-environment-variables
+export GOPATH=$HOME/golang
+export PATH=$PATH:/usr/local/go/bin
+
