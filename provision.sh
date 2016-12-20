@@ -14,4 +14,5 @@ sudo apt-get -y update
 
 . ./git/git.sh
 . ./go/go.sh
+. ./vim/vim.sh
 
